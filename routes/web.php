@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\LeagueMgtController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,6 +17,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/league/results', function (){
-    return view('prediction');
-});
+Route::post('/league/results', [LeagueMgtController::class, 'index'])->name('index');

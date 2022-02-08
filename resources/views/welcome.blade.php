@@ -30,7 +30,7 @@
         <div class="container d-flex justify-content-center">
             <div class="jumbotron content">
                 <h1 class="title text-center mt-4">Welocome to Insider League</h1>
-                <form class="form" method="post" action="#">
+                <form class="form" method="post" action="{{ route('index') }}">
                     @csrf
                     <div class="mb-3">
                         <label for="teams" class="form-label text-white mt-3">Teams</label>
